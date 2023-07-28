@@ -1,0 +1,194 @@
+<html>
+
+<style type="text/css">
+	h1 {
+		font-size: 3.5em;
+		font-family: sans-serif;
+	}
+
+	img {
+		border-radius: 10px;
+	}
+
+	header .container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	header .logo {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		font-family: sans-serif;
+	}
+
+	header .logo img {
+		width: 50px;
+		height: 50px;
+		margin-right: 10px;
+	}
+
+	ul , ol {
+		list-style:none;
+	}
+
+	.nav li a {
+		background-color: #ffffff;
+		color: #ff0080;
+		text-decoration:none;
+		padding: 10px 15px;
+		display: block;
+	}
+
+	.nav li a:hover {
+		background-color: #ffccff;
+		
+	}
+
+	.nav  li {
+		float: left;
+	}
+
+	.nav li ul {
+		display: none;
+		position:absolute;
+		min-width: 140px;
+	}
+
+	.nav li:hover  ul {
+		display: block;
+	}
+
+
+</style>
+
+<head>
+	<title>Paleteria Arcoiris</title>
+</head>
+
+<body bgcolor="pink" text="fusia">
+
+	<header>
+		<div class="container">
+			<div class="logo">
+				<img src="logotipo.png">
+				<p>Paleteria Arcoiris</p>
+			</div>
+			<ul class = "nav">
+			
+				<li><a href="#contacto">Contacto</a></li>
+
+				<li><a href="#productos">Productos</a>
+					<ul>
+						<li><a href="">Agregar producto</a></li>
+						<li><a href=""> Editar </a></li>
+						<li><a href=""> Eliminar </a></li>
+					</ul>
+				</li>
+
+				<li><a href="#Pedidos">Pedidos</a></li>
+			
+			</ul>
+
+		</div>
+	</header>
+
+	<center>
+		<h1>PALETERIA ARCOIRIS</h1>
+	</center>
+	<center><img src="logotipo.png"></center>
+
+	<h2>
+		<center>¡Calidad y sabor solo en paleteria arcoiris!</center>
+	</h2>
+
+
+	<section id="contacto">
+		<div>
+			<h1>CONTACTO</h1>
+		</div>
+		<h2>Contactanos a traves de nuestras redes sociales </h2>
+		<h2><img src="WhatsApp-logo.png" alt="logowhats" width="61" height="43" longdesc="whatsapp">WhatsaApp: 4981011957 </h2>
+
+		<h2><img src="logo_facebook.png" alt="logofacebook" width="45" height="52" longdesc="facebook">Facebook: Paletería Arcoiris </h2>
+		
+		<h2><img src="Instagram-logo.png" alt="logoinstagram" width="55" height="50" longdesc="instagram">Instagram: paleteríaarcoiris09 </h2>
+	</section>
+
+	<section id="productos">
+		<div>
+		<h1>PRODUCTOS</h1>
+	</div>
+		
+	</section>
+
+	<section id="Pedidos">
+			<div>
+		<h1>PEDIDOS </h1>
+	</div>
+	<form action="guardar.php" method="post">
+
+		<table>
+			<tr>
+				<td>
+
+					<h3>¡Registrate como cliente!</h3>
+					<label for="name">Ingresa tu nombre: </label>
+					<input type="text" namecliente="name">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="nameap_patcliente">Ingresa tu primer apellido:</label>
+					<input type="text" nameap_patcliente="nameap_pat">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="nameap_matcliente">Ingresa tu segundo apellido:</label>
+					<input type="text" nameap_matcliente="nameap_mat">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="telefono">Ingresa tu numero de telefono:</label>
+					<input type="text" telefono="telefono">
+				</td>
+			</tr>
+
+
+			<tr>
+				<td>
+					<h3>Realiza tu pedido</h3>
+					<label for="cantidadPaletas">Cantidad de productos:</label>
+					<input type="text" cantidadPaletas="cantidadPaletas">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="listaProductos">Productos:</label>
+					<input type="text" listaProductos="listaProductos">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="fecha_pedido">¿Para cuando tu pedido?</label>
+					<input type="text" fecha_pedido="fecha_pedido">
+				</td>
+			</tr>
+
+		</table>
+
+	</form>
+	
+	</section>
+
+</body>
+
+</html>
