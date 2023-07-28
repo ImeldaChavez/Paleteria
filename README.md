@@ -2,6 +2,7 @@
 Este es un sitio web realizado como proyecto final de la materia de Taller de Base de datos, en la cual empleamos la herramienta de HTML para la creación de la pagina web, además esta conectada a una base de datos donde se pueden registrar datos que el usuario introduzca. 
 
 **Link de acceso a la página web:**
+https://paleteriabd.netlify.app/
 
 <br>
 
